@@ -1,0 +1,136 @@
+
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: rgb(207, 215, 142); /* Consider a different background color */
+}
+
+label{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 20px 0 ;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* Search input styles */
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #333;
+}
+
+/* Search button styles */
+#search-button {
+  padding: 10px 20px;
+  background-color: #138065; /* Consider a different button color */
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Search results container styles */
+.search-results {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* Individual search result styles */
+.search-result {
+  border-radius: 30px;
+  margin-bottom: 60px;
+  margin: 3%;
+  height: 100%;
+  border-radius: 0 0 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+.search-result img {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 600px;
+  height: 600px;
+  border: #333;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.search-result a{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+/* Styles for smaller screens (less than 768px) */
+@media (max-width: 768px) {
+    .search-results {
+      width: 90%; 
+    }
+  
+    .search-result {
+      width: 45%; 
+      margin: 5%; 
+       }
+  }
+  
+  .search-result img:hover {
+    background-color: #333;
+    opacity: 0.8;
+  }
+  
+
+#show-more{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#show-more:hover{
+    background-color: #138065;
+}
